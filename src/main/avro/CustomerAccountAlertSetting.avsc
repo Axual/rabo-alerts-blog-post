@@ -1,0 +1,30 @@
+{
+  "namespace": "nl.rabobank.beb.distribution",
+  "doc": "Contains a specific alert for a given account.",
+  "name": "CustomerAccountAlertSetting",
+  "type": "record",
+  "fields": [
+    {
+      "doc": "The type of alert",
+      "name": "alertType",
+      "type": "string"
+    },
+    {
+      "doc": "The channel types to which alerts need to be sent",
+      "name": "channels",
+      "type": {
+        "type": "array",
+        "items": "ChannelType"
+      }
+    },
+    {
+      "doc": "An amount parameter used during alert derivation",
+      "name": "amount",
+      "type": [
+        "null",
+        "nl.rabobank.beb.general.Decimal"
+      ],
+      "default": null
+    }
+  ]
+}

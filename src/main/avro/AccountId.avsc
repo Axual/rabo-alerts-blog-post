@@ -1,0 +1,12 @@
+{
+  "namespace": "nl.rabobank.beb.payments",
+  "doc": "An account id, represented as IBAN.",
+  "name": "AccountId",
+  "type": "record",
+  "fields": [
+    {
+      "name": "id",
+      "type": "string"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "namespace": "nl.rabobank.beb.distribution",
+  "doc": "Contains a list of customer ids.",
+  "name": "CustomerIds",
+  "type": "record",
+  "fields": [
+    {
+      "doc": "A list of customer identifiers",
+      "name": "customerIds",
+      "type": {
+        "type": "array",
+        "items": "CustomerId"
+      }
+    }
+  ]
+}

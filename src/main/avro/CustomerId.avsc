@@ -1,0 +1,13 @@
+{
+  "namespace": "nl.rabobank.beb.distribution",
+  "doc": "Identification of a customer",
+  "name": "CustomerId",
+  "type": "record",
+  "fields": [
+    {
+      "doc": "The customer identifier",
+      "name": "id",
+      "type": "string"
+    }
+  ]
+}

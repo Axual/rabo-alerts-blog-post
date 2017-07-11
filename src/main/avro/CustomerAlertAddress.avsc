@@ -1,0 +1,17 @@
+{
+  "namespace": "nl.rabobank.beb.distribution",
+  "doc": "Address to which customer alerts are sent. Push addresses are represented by CustomerId.",
+  "name": "CustomerAlertAddress",
+  "type": "record",
+  "fields": [
+    {
+      "doc": "",
+      "name": "address",
+      "type": [
+        "EmailAddress",
+        "PhoneNumber",
+        "CustomerId"
+      ]
+    }
+  ]
+}

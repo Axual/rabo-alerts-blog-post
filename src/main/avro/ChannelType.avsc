@@ -1,0 +1,11 @@
+{
+  "namespace": "nl.rabobank.beb.distribution",
+  "doc": "The type of channel an outbound message can be sent to.",
+  "name": "ChannelType",
+  "type": "enum",
+  "symbols": [
+    "EMAIL",
+    "PUSH",
+    "SMS"
+  ]
+}

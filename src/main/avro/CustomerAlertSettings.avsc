@@ -1,0 +1,29 @@
+{
+  "namespace": "nl.rabobank.beb.distribution",
+  "doc": "Alert settings of a specific customer",
+  "name": "CustomerAlertSettings",
+  "type": "record",
+  "fields": [
+    {
+      "doc": "The customer",
+      "name": "customerId",
+      "type": "CustomerId"
+    },
+    {
+      "doc": "The physical addresses per channel type to which alerts are to be sent",
+      "name": "addresses",
+      "type": {
+        "type": "array",
+        "items": "CustomerAlertAddress"
+      }
+    },
+    {
+      "doc": "List of account alert settings",
+      "name": "accountAlertSettings",
+      "type": {
+        "type": "array",
+        "items": "CustomerAccountAlertSettings"
+      }
+    }
+  ]
+}

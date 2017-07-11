@@ -1,0 +1,35 @@
+{
+  "namespace": "nl.rabobank.beb.distribution",
+  "doc": "Representation of a specific message",
+  "name": "OutboundMessage",
+  "type": "record",
+  "fields": [
+    {
+      "doc": "The timestamp the message was generated",
+      "name": "timestamp",
+      "type": "long"
+    },
+    {
+      "doc": "(Optional) The customer to which the message is addressed",
+      "name": "customerId",
+      "type": [
+        "null",
+        "CustomerId"
+      ],
+      "default": null
+    },
+    {
+      "doc": "The type of message (used for templating)",
+      "name": "messageType",
+      "type": "string"
+    },
+    {
+      "doc": "Additional parameters, specifically defined for each message",
+      "name": "params",
+      "type": {
+        "type": "map",
+        "values": "string"
+      }
+    }
+  ]
+}

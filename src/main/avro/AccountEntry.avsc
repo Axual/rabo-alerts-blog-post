@@ -1,0 +1,52 @@
+{
+  "namespace": "nl.rabobank.beb.payments",
+  "type": "record",
+  "name": "AccountEntry",
+  "fields": [
+    {
+      "doc": "Timestamp of the booking",
+      "name": "timestamp",
+      "type": "long"
+    },
+    {
+      "doc": "Account Identification IBAN",
+      "name": "accountId",
+      "type": "string"
+    },
+    {
+      "doc": "Account Currency",
+      "name": "accountCurrency",
+      "type": "string"
+    },
+    {
+      "doc": "Booking Amount Numeric",
+      "name": "bookingAmountNumeric",
+      "type": "long"
+    },
+    {
+      "doc": "Booking Amount",
+      "name": "bookingAmount",
+      "type": "string"
+    },
+    {
+      "doc": "Booking Credit Debit Indicator",
+      "name": "bookingCreditDebitIndicator",
+      "type": "string"
+    },
+    {
+      "doc": "Balance After Booking Numeric",
+      "name": "BalanceAfterBookingNumeric",
+      "type": "long"
+    },
+    {
+      "doc": "Balance After Booking",
+      "name": "balanceAfterBooking",
+      "type": "string"
+    },
+    {
+      "doc": "Balance After Booking Credit Debit Indicator",
+      "name": "BalanceAfterBookingCreditDebitIndicator",
+      "type": "string"
+    }
+  ]
+}

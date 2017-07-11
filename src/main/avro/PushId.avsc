@@ -1,0 +1,28 @@
+{
+  "namespace": "nl.rabobank.beb.distribution",
+  "doc": "The id of a mobile device used to send push notifications.",
+  "name": "PushId",
+  "type": "record",
+  "fields": [
+    {
+      "doc": "The push id of the device",
+      "name": "pushId",
+      "type": "string"
+    },
+    {
+      "doc": "The type of the device",
+      "name": "deviceType",
+      "type": "string"
+    },
+    {
+      "doc": "The push provider for the device",
+      "name": "pushProvider",
+      "type": "string"
+    },
+    {
+      "doc": "The push provider sdk version",
+      "name": "sdkVersion",
+      "type": "string"
+    }
+  ]
+}

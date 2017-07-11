@@ -1,0 +1,13 @@
+{
+  "namespace": "nl.rabobank.beb.distribution",
+  "doc": "The phone number, wrapped in a record so it can be used as key",
+  "name": "PhoneNumber",
+  "type": "record",
+  "fields": [
+    {
+      "doc": "The phone number",
+      "name": "phoneNumber",
+      "type": "string"
+    }
+  ]
+}

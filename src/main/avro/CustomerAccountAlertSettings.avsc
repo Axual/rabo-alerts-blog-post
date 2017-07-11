@@ -1,0 +1,26 @@
+{
+  "namespace": "nl.rabobank.beb.distribution",
+  "doc": "Contains a list of account-specific alerts for a given customer.",
+  "name": "CustomerAccountAlertSettings",
+  "type": "record",
+  "fields": [
+    {
+      "doc": "The account for which the settings apply.",
+      "name": "account",
+      "type": "nl.rabobank.beb.payments.AccountId"
+    },
+    {
+      "doc": "The currency for which the settings apply.",
+      "name": "currency",
+      "type": "nl.rabobank.beb.general.Currency"
+    },
+    {
+      "doc": "List of alert settings for the account.",
+      "name": "settings",
+      "type": {
+        "type": "array",
+        "items": "CustomerAccountAlertSetting"
+      }
+    }
+  ]
+}

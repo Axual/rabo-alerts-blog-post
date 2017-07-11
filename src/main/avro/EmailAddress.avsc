@@ -1,0 +1,13 @@
+{
+  "namespace": "nl.rabobank.beb.distribution",
+  "doc": "The email address, wrapped in a record so it can be used as key",
+  "name": "EmailAddress",
+  "type": "record",
+  "fields": [
+    {
+      "doc": "The email address",
+      "name": "emailAddress",
+      "type": "string"
+    }
+  ]
+}
